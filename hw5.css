@@ -1,0 +1,502 @@
+/*** default font ***/
+body {
+    margin: 0;
+    font-family: 'Raleway', 'Poppins', sans-serif;
+  }
+
+
+
+/*** top navigation ***/
+#cmuHome {
+  float: left;
+  padding: 0;
+}
+
+#cmuHome a {
+  padding: 0;
+}
+
+#cmuHome:hover {
+  opacity: 0.7;
+}
+
+.topnav {
+  overflow: hidden;
+  }
+  
+.topnav a {
+    float: right;
+    color: #c41230;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+.topnav a:hover {
+    background-color: #c41230;
+    color: white;
+  }
+  
+.topnav a.active {
+    background-color: #c41230;
+    color: white;
+  }
+
+
+
+/*** section title for each page ***/  
+.homeTitle {
+  padding-top: 24px;
+  padding-left: 48px;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+
+/*** larger button formatting ***/
+.buttons {
+  padding-top: 12px;
+  padding-left: 48px;
+}
+
+.button {
+  margin: 10px;
+  font-family: 'Raleway', 'Poppins', sans-serif;
+  background-color: #c41230;
+  border: #c41230 2px solid;
+  color: white;
+  padding: 16px 24px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-color: white;
+  border: #c41230 2px solid;
+  color: #c41230;
+}
+
+.button2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*** general text formatting ***/
+p {
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+}
+
+ul {
+  font-family: 'IBM Plex Sans';
+  font-size: 16px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size:24px;
+}
+
+
+
+/*** home page body text formatting ***/
+.homeBody {
+  padding-top: 24px;
+  padding-left: 58px;
+}
+
+
+
+/*** appointments page formatting ***/
+#leftBox {
+  float:left;
+  width:40%;
+  padding-left: 58px;
+}
+
+#rightBox {
+  float:left;
+  width:30%;
+}
+
+#apptDetails {
+  color: #c41230;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+
+
+/*** button formatting ***/
+.smallButton {
+  margin: 10px 0px 10px 0px;
+  font-family: 'Raleway', 'Poppins', sans-serif;
+  background-color: white;
+  border: #c41230 2px solid;
+  color: #c41230;
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.smallButton:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*** appointment type input formatting ***/
+.radioSelect {
+  float:left;
+  width:100%;
+  height:450px;
+  padding-left: 48px;
+}
+
+
+
+/*** schedule appointment location container ***/
+.bodyInput1 {
+  float: left;
+  width: 20%;
+  padding-left: 48px;
+}
+
+
+
+/*** schedule appointment date container ***/
+.bodyInput2 {
+  float: left;
+  width: 35%;
+  padding-left: 60px;
+}
+
+
+
+/*** schedule appointment time container ***/
+.bodyInput3 {
+  float: right;
+  width: 30%;
+}
+
+
+
+/*** schedule appointment footer buttons formatting ***/
+#leftButtons {
+  position: fixed;
+  bottom: 30px;
+  padding-left: 48px;
+}
+
+#rightButtons {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  padding-right: 48px;
+}
+
+.smallButton2 {
+  margin: 10px 0px 10px 0px;
+  font-family: 'Raleway', 'Poppins', sans-serif;
+  background-color: #c41230;
+  border: #c41230 2px solid;
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.smallButton2:hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*** schedule appointment calendar formatting ***/
+.month {
+  padding: 30px 15px;
+  width: 100%;
+  background: white;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: black;
+  list-style-type: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: white;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: white;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size:14px;
+  color: #c4c4c4;
+}
+
+.days input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.days label {
+  display: inline-block;
+  background-color: #ffe5e5;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 2px solid #ffe5e5;
+  border-radius: 100px;
+  color: #710000;
+  font-weight: 600;
+}
+
+.days input[type="radio"]:checked + label {
+  background-color:#c41230;
+  border-color: #710000;
+  color: white;
+}
+
+.days input[type="radio"]:focus + label {
+  border: 2px dashed #710000;
+}
+
+
+.calendar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.AM {
+  float: left;
+  width: 30%;
+  position: relative;
+}
+
+.PM {
+  float: right;
+  width: 30%;
+  position: relative;
+  margin-right: 96px;
+}
+
+
+.buttonGroup input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.buttonGroup label {
+  display: inline-block;
+  background-color: #ffe5e5;
+  padding: 5px 10px;
+  margin: 10px 10px 0px 0px;
+  font-size: 16px;
+  border: 2px solid #ffe5e5;
+  border-radius: 10px;
+  color: #710000;
+  font-weight: 600;
+}
+
+.buttonGroup input[type="radio"]:checked + label {
+  background-color:#c41230;
+  border-color: #710000;
+  color: white;
+}
+
+.buttonGroup input[type="radio"]:focus + label {
+  border: 2px dashed #710000;
+}
+
+
+/*** health history page formatting ***/
+.healthHistory1 {
+  float: left;
+  width: 40%;
+  padding-left: 58px;
+}
+
+#historyTable {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  font-family: "IBM Plex Sans";
+}
+
+#historyTable td {
+  width: 50%;
+  font-weight: 400;
+  color: #454545;
+}
+
+#historyTable th {
+  font-weight: 800;
+  width: 50%;
+}
+
+#historyTable .leftColumn {
+  text-align: left;
+}
+
+#historyTable .rightColumn {
+  text-align: right;
+}
+
+#historyTable .rightDates {
+  text-align: right;
+  font-weight: 600;
+  color: #454545;
+}
+
+#immunTable {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  font-family: "IBM Plex Sans";
+}
+
+#immunTable td {
+  width: 50%;
+  font-weight: 400;
+  color: #454545;
+}
+
+#immunTable th {
+  font-weight: 800;
+  width: 50%;
+}
+
+#immunTable .leftColumn {
+  text-align: left;
+}
+
+#immunTable .rightColumn {
+  text-align: right;
+}
+
+#immunTable .rightDates {
+  text-align: right;
+  font-weight: 600;
+  color: #454545;
+}
+
+#immunTable .rightStatuses {
+  text-align: right;
+  font-weight: 600;
+  color: #c41230;
+}
+
+.healthHistory2 {
+  float: left;
+  width: 40%;
+  padding-left: 10%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 50%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.leftConfirmation {
+  padding-top: 24px;
+  padding-left: 58px;
+  float: left;
+}
+
+.rightMap {
+  float: right;
+  right: 0;
+  padding-right: 48px;
+}

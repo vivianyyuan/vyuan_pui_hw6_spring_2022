@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CMU COVID-19 Portal: Health History</title>
+    <meta name="viewport" content="width=2560px, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="hw5.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!--top navigation bar-->
+    <div class="topnav">
+        <a href="index.html" id="cmuHome"><img src="cmulogo.png" alt="cmu logo home link" style="width:72px;height:60px;"></a>
+        <a class="active" href="health-history.html">Health History</a>
+        <a href="appt-page.html">Appointments</a>
+        <a href="#profile">Profile</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="homeTitle">
+        <h1>Health History</h1>
+    </div>
+
+    <div class="healthHistory1">
+        <h2>Past Medical Problems</h2>
+
+        <!--table with past medical conditions-->
+        <table id="historyTable">
+            <tr>
+                <th class="leftColumn">Problem</th>
+                <th class="rightColumn">Diagnosis Date</th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="leftColumn">Anemia</td>
+                <td class="rightDates">11/07/2006</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">High Cholesterol</td>
+                <td class="rightDates">8/14/2014</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">Anemia</td>
+                <td class="rightDates">2/23/2015</td>
+            </tr>
+            <tr></tr>
+        </table>
+
+        <button class="smallButton2">Edit</button>
+
+        <h2>Immunizations</h2>
+        
+        <!--table with past immunizations-->
+        <table id="immunTable">
+            <tr>
+                <th class="leftColumn">Name</th>
+                <th class="rightColumn">Date</th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="leftColumn">Hepatitis A</td>
+                <td class="rightDates">7/15/2010</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">Hepatitis B</td>
+                <td class="rightDates">7/15/2010</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">Tetanus</td>
+                <td class="rightDates">9/26/2016</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">Meningococcal</td>
+                <td class="rightStatuses">Expired</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">MMR</td>
+                <td class="rightStatuses">Expired</td>
+            </tr>
+            <tr>
+                <td class="leftColumn">COVID-19</td>
+                <td class="rightStatuses">Not Completed</td>
+            </tr>
+            <tr></tr>
+        </table>
+
+        <button class="smallButton2">Edit</button>
+        <button class="smallButton">Upload Files</button>
+    </div>
+
+    <!--warn user about health risk-->
+    <div class="healthHistory2">
+        <p>Based on your health history, you may be at higher risk of being hospitalized
+            for COVID-19.<br><br>Schedule your COVID-19 vaccine appointment as soon as possible. 
+        </p>
+
+        <!--links to appointment scheduling process-->
+        <button class="button" onclick="window.location.href='sched-appt-page-1.html'";>Schedule Appointment</button>
+    </div>
+</body>
+</html>

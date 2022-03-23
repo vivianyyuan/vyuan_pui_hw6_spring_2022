@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CMU COVID-19 Portal: Schedule Appointment</title>
+    <meta name="viewport" content="width=2560px, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="hw5.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:600' rel='stylesheet' type='text/css'>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!--top navigation bar-->
+    <div class="topnav">
+        <a href="index.html" id="cmuHome">
+            <img src="cmulogo.png" alt="cmu logo home link" style="width:72px;height:60px;"></a>
+        <a href="health-history.html">Health History</a>
+        <a class="active" href="appt-page.html">Appointments</a>
+        <a href="#profile">Profile</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class ="homeTitle">
+        <h1>Schedule Appointment</h1>
+    </div>
+    
+    <!--radio buttons to select appointment type-->
+    <div class="radioSelect">
+        <p>Select an appointment type <span style="color:#c41230;font-weight:600;">(required)</span>:
+            <br><br>
+            <form>
+                <input type="radio" id="tartan testing" name="appointment type" value="Tartan Testing" onclick="getType()">
+                    <label for="tartan testing">Tartan Testing</label><br><br>
+                <input type="radio" id="vaccine1" name="appointment type" value="COVID-19 Vaccine (first dose)" onclick="getType()">
+                    <label for="vaccine1">COVID-19 Vaccine (first dose)</label><br><br>
+                <input type="radio" id="vaccine2" name="appointment type" value="COVID-19 Vaccine (second dose)" onclick="getType()">
+                    <label for="vaccine2">COVID-19 Vaccine (second dose)</label><br><br>
+                <input type="radio" id="pfizer" name="appointment type" value="COVID-19 Booster (Pfizer)" onclick="getType()">
+                    <label for="pfizer">COVID-19 Booster (Pfizer)</label><br><br>
+                <input type="radio" id="moderna" name="appointment type" value="COVID-19 Booster (Moderna)" onclick="getType()">
+                    <label for="moderna">COVID-19 Booster (Moderna)</label><br><br>
+                <input type="radio" id="flu shot" name="appointment type" value="Flu Shot" onclick="getType()">
+                    <label for="flu shot">Flu Shot</label>
+            </form>
+    </div>
+
+    <!--footer buttons-->
+    <div id="leftButtons">
+        <button class="smallButton" onclick="window.location.href='appt-page.html'">Cancel</button>
+    </div>
+
+    <div id="rightButtons">
+
+        <!--button to lead to next page-->
+        <button onclick="window.location.href='sched-appt-page-2.html';" class="smallButton2">Next</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CMU COVID-19 Portal: Schedule Appointment</title>
+    <meta name="viewport" content="width=2560px, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="hw5.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:600' rel='stylesheet' type='text/css'>
+    <script src="main.js"></script>
+</head>
+
+<body onload="changeApptHeading()">
+    <!--top navigation bar-->
+    <div class="topnav">
+        <a href="index.html" id="cmuHome"><img src="cmulogo.png" alt="cmu logo home link" style="width:72px;height:60px;"></a>
+        <a href="health-history.html">Health History</a>
+        <a href="appt-page.html" class="active">Appointments</a>
+        <a href="#profile">Profile</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="homeTitle">
+        <h1>Schedule Appointment</h1>
+    </div>
+
+    <!--appointment location-->
+    <div class="bodyInput1">
+        <h2 id="appt-type"></h2>
+        <p>Location: UHS<br>15 minutes</p>
+        <img src="cmu map.png" alt="map of where the UC is on CMU's campus" height="180px" width="180px">
+    </div>
+
+    <!--appointment date calendar selection-->
+    <div class="bodyInput2">
+        <p>Select an appointment date <span style="color:#c41230;font-weight:600;">(required)</span>:</p>
+
+        <div class="month">      
+            <ul>
+                <li class="prev"><img src="left-arrow.png"></li>
+                <li class="next"><img src="right-arrow.png"></li>
+                <li>February<br><span style="font-size:14px">2021</span></li>
+            </ul>
+        </div>
+        
+        <div class="calendar">
+            <ul class="weekdays">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
+        </div>
+              
+        <div class="calendar">
+            <ul class="days">  
+                <li>30</li>
+                <li>31</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li><input type="radio" id="date8" value="8" name="date" onclick="getDate()">
+                    <label for="date8">8</label>
+                </li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li><input type="radio" id="date14" value="14" name="date" onclick="getDate()">
+                    <label for="date14">14</label>
+                </li>
+                <li><input type="radio" id="date15" value="15" name="date" onclick="getDate()">
+                    <label for="date15">15</label>
+                </li>
+                <li>16</li>
+                <li>17</li>
+                <li><input type="radio" id="date18" value="18" name="date" onclick="getDate()">
+                    <label for="date18">18</label>
+                </li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li><input type="radio" id="date23" value="23" name="date" onclick="getDate()">
+                    <label for="date23">23</label>
+                </li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li><input type="radio" id="date28" value="28" name="date" onclick="getDate()">
+                    <label for="date28">28</label>
+                </li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--time button selection-->
+    <div class="bodyInput3">
+
+        <p>Select an available time <span style="color:#c41230;font-weight:600;">(required)</span>:<br></p>
+
+        <div class="AM">
+            
+            <p>AM</p>
+
+            <div class="buttonGroup">
+                <input type="radio" id="830" value="8:30 AM" name="time" onclick="getTime()">
+                    <label for="830">8:30</label>
+                <input type="radio" id="900" value="9:00 AM" name="time" onclick="getTime()">
+                    <label for="900">9:00</label>
+                <input type="radio" id="930" value="9:30 AM" name="time" onclick="getTime()">
+                    <label for="930">9:30</label>
+                <input type="radio" id="1015" value="10:15 AM" name="time" onclick="getTime()">
+                    <label for="1015">10:15</label>
+                <input type="radio" id="1045" value="10:45 AM" name="time" onclick="getTime()">
+                    <label for="1045">10:45</label>
+                <input type="radio" id="1100" value="11:00 AM" name="time" onclick="getTime()">
+                    <label for="1100">11:00</label>
+                <input type="radio" id="1115" value="11:15 AM" name="time" onclick="getTime()">
+                    <label for="1115">11:15</label>
+                <input type="radio" id="1130" value="11:30 AM" name="time" onclick="getTime()">
+                    <label for="1130">11:30</label>
+            </div>
+        </div>
+        
+        <div class="PM">
+            
+            <p>PM</p>
+            
+            <div class="buttonGroup">
+                <input type="radio" id="100" value="1:00 PM" name="time" onclick="getTime()">
+                    <label for="100">1:00</label>
+                <input type="radio" id="215" value="2:15 PM" name="time" onclick="getTime()">
+                    <label for="215">2:15</label>
+                <input type="radio" id="230" value="2:30 PM" name="time" onclick="getTime()">
+                    <label for="230">2:30</label>
+                <input type="radio" id="300" value="3:00 PM" name="time" onclick="getTime()">
+                    <label for="300">3:00</label>
+                <input type="radio" id="345" value="3:45 PM" name="time" onclick="getTime()">
+                    <label for="345">3:45</label>
+                <input type="radio" id="415" value="4:15 PM" name="time" onclick="getTime()">
+                    <label for="415">4:15</label>
+                <input type="radio" id="500" value="5:00 PM" name="time" onclick="getTime()">
+                    <label for="500">5:00</label>
+                <input type="radio" id="530" value="5:30 PM" name="time" onclick="getTime()">
+                    <label for="530">5:30</label>
+            </div>
+        </div>
+    </div>
+    
+    <!--footer buttons-->
+    <div id="leftButtons">
+        <button class="smallButton" onclick="window.location.href='appt-page.html'">Cancel</button>
+        <button class="smallButton2" onclick="window.location.href='sched-appt-page-1.html'">Back</button>
+    </div>
+
+    <div id="rightButtons">
+        <button class="smallButton2" onclick="window.location.href='appt-confirmation-page.html'">Confirm</button>
+    </div>
+</body>
+</html>

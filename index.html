@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CMU COVID-19 Portal: Home</title>
+    <meta name="viewport" content="width=2560px, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="hw5.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:600' rel='stylesheet' type='text/css'>
+    <script src = "main.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <!--top navigation bar-->
+    <div class="topnav">
+        <a href="index.html" id="cmuHome"><img src="cmulogo.png" alt="cmu logo home link" style="width:72px;height:60px;"></a>
+        <a href="health-history.html">Health History</a>
+        <a href="appt-page.html" onclick="loadAppts()">Appointments</a>
+        <a href="#profile">Profile</a>
+        <a class="active" href="index.html">Home</a>
+    </div>
+
+    <div class ="homeTitle">
+        <h1>Welcome to CMU COVID-19 Portal!</h1>
+    </div>
+
+    <div class="buttons">
+        <!--links to schedule appointment process-->
+        <button onclick="window.location.href='sched-appt-page-1.html'"; class="button">Schedule Appointment</button>
+        <button class="button button2">Enter COVID-19 Vaccine Info</button>
+    </div>
+
+    <!--home page info-->
+    <div class="homeBody">
+        <p>As a student, you may use COVID-19 Portal to:<br>
+            <ul>
+                <li>Enter required immunization and COVID-19 vaccine info</li>
+                <li>Schedule Tartan Testing</li>
+                <li>Schedule required immunization appointments</li>
+                <li>View lab results</li>
+            </ul>
+        </p>
+        
+        <p>For medical emergencies:
+            <ul>
+                <li>On-campus emergencies, call Campus Police at <span style="font-weight:600">412-268-2323</span></li>
+                <li>Off-campus emergencies, call <span style="font-weight:600">911</span></li>
+            </ul><br>
+        
+            <h2>Medical Advice:</h2>
+        
+            <div>
+                <img src="phone-icon.png" alt text="phone icon" style="width:32px;height:32px;vertical-align:middle;"></img>
+                <span style="vertical-align: middle; font-size:24px;color:#c41230; font-weight:600;">412-268-2157</span>
+            </div>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CMU COVID-19 Portal: Appointments</title>
+    <meta name="viewport" content="width=2560px, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="hw5.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans:600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <!--top navigation bar-->
+    <div class="topnav">
+        <a href="index.html" id="cmuHome"><img src="cmulogo.png" alt="cmu logo home link" style="width:72px;height:60px;"></a>
+        <a href="health-history.html">Health History</a>
+        <a class="active" href="appt-page.html">Appointments</a>
+        <a href="#profile">Profile</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class ="homeTitle">
+        <h1>Appointments</h1>
+    </div>
+
+    <div class="buttons">
+        <button onclick="window.location.href='sched-appt-page-1.html'; createAppt()" class="button">Schedule Appointment</button>
+    </div>
+
+    <div id="leftBox">
+        <h2 id="upcomingText"></h2>
+        <div id="upcoming-appts">
+        </div>
+    </div>
+    <script src="appts.js"></script>
+
+    <!--- displays  --->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modalContent"></p>
+        </div>
+      </div>
+    
+    <div id="rightBox">
+        <h2>Past Appointments</h2>
+        <p>
+            Tartan Testing<br>
+            Time: January 17 @ 1:00PM<br>
+            Location: UHS<br>
+        </p>
+        <p id="apptDetails">
+            View Appointment Details
+            <img src="arrow.png" height="8px" width="12px"><br>
+        </p>
+        <p>
+            Tartan Testing<br>
+            Time: January 10 @ 3:00PM<br>
+            Location: UHS<br>
+        </p>
+        <p id="apptDetails">
+            View Appointment Details
+            <img src="arrow.png" height="8px" width="12px">
+        </p>
+    </div>
+</body>
+</html>
